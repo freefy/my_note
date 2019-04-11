@@ -1,0 +1,238 @@
+.content-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .left-side-box {
+    box-sizing: border-box;
+    width: 14%;
+    height: 100%;
+    min-width: 100px;
+    position: absolute;
+    left: 0;
+    padding-top: 4%;
+    // padding-left: 40px;
+    color: #b5babe;
+    // background: #454b50;
+    background: #2f3941;
+    font-size: 1rem;
+
+    .userAccount {
+      // margin-bottom: 48px;
+      margin-left: -16px;
+
+      img {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+      }
+
+    }
+
+    .menuList {
+      // width: 12%;
+      // height: 40px;
+      // line-height: 40px;
+      // min-width: 100px;
+      // padding-left: 5%;
+      // position: relative;
+      // text-align: left;
+      // margin-top: 20px;
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      min-width: 100px;
+      /* padding-left: 5%; */
+      box-sizing: border-box;
+      padding-left: 40px;
+      position: relative;
+      text-align: left;
+      margin-top: 10px;
+
+      &:hover {
+        background: #ddd;
+        font-size: 16px;
+
+        a {
+          color: #000;
+
+        }
+
+        .el-dropdown-link {
+          color: #000;
+        }
+      }
+
+      i {
+        margin-right: 10px;
+        // position: absolute;
+        // left: 4%;
+        // top: 4%;
+      }
+
+      a {
+        color: #b5babe;
+        display: inline-block;
+      }
+
+      .el-dropdown-link {
+        color: #f7f7f7;
+
+        i {
+          position: relative;
+        }
+      }
+    }
+
+    .el-icon-plus {
+      //创建笔记本的图标
+      margin: -7px 8px 0 -30px;
+      width: 28px;
+      height: 28px;
+      background: #5a98de;
+      border-radius: 50%;
+      /* padding-top: 5px; */
+      color: #f7f7f7;
+      font-size: 18px;
+      line-height: 28px;
+      text-align: center;
+    }
+  }
+
+  .right-side-box {
+    width: 100%;
+    height: 100%;
+    background: #f7f7f7;
+    box-sizing: border-box;
+    padding-left: 14%;
+    z-index: -999;
+
+    .view-add-folder {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      text-align: center;
+      vertical-align: middle;
+      background: #e8e8e8;
+      opacity: 0.6;
+      z-index: 99;
+
+      .folder-box {
+        width: 26%;
+        height: 30%;
+        margin: 12% 28%;
+        padding-top: 48px;
+        background: #fff;
+
+        .fold-input {
+          width: 80%;
+          height: 20%;
+          margin: auto;
+
+          .el-input {
+            width: 70%;
+            height: 16px;
+
+            .el-input__inner {
+              border: none;
+              border-radius: 0px;
+              border-bottom: 1px solid #dcdfe6;
+            }
+          }
+        }
+
+        .select-fold {
+          height: 20%;
+          margin: 10px 0 30px;
+        }
+
+        .folder-btn {
+          width: 100%;
+        }
+      }
+    }
+
+    .view-change-name {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      text-align: center;
+      vertical-align: middle;
+      background: #e8e8e8;
+      opacity: 0.8;
+      z-index: 99999;
+
+      .name-box {
+        width: 26%;
+        height: 30%;
+        margin: 12% 28%;
+        padding-top: 48px;
+        background: #fff;
+
+        .name-input {
+          width: 80%;
+          height: 36%;
+          margin: auto;
+
+          .el-input {
+            width: 70%;
+            height: 16px;
+
+            .el-input__inner {
+              border: none;
+              border-radius: 0px;
+              border-bottom: 1px solid #dcdfe6;
+            }
+          }
+        }
+
+        .name-btn {
+          width: 100%;
+        }
+      }
+    }
+
+    .view-confirm-save {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      text-align: center;
+      vertical-align: middle;
+      background: #e8e8e8;
+      opacity: 0.8;
+      z-index: 99999;
+
+      .confirm-box {
+        width: 23%;
+        height: 27%;
+        margin: 12% 28%;
+        padding-top: 20px;
+        background: #fff;
+        border-radius: 20px;
+
+        h1 {
+          height: 50px;
+          margin: 40px 0;
+          /* margin-bottom: 55px; */
+          line-height: 50px;
+        }
+      }
+    }
+  }
+
+  .el-dropdown {
+    margin-left: 28px;
+    color: #fff;
+  }
+
+  .backBtn {
+    position: absolute;
+    left: 215px;
+    top: 0;
+    z-index: 999;
+    border-radius: 0;
+  }
+}

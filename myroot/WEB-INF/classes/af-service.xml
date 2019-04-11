@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<!-- 示例
+	<service name="Hello" class="my.HelloApi" /> 
+	<upload name="BasicFile" class="my.my.BasicFileUpload" /> 
+	-->
+
+<<<<<<< HEAD
+	<service name="refreshFiles" class="my.refreshFiles" />
+	<service name="refreshFolders" class="my.refreshFolders" />
+	<service name="getFolders" class="my.getFolders" />
+	<service name="getFiles" class="my.getFiles" />
+=======
+	<service name="refreshFiles" class="my.finish.refreshFiles" />
+	<service name="refreshFolders" class="my.finish.refreshFolders" />
+	<service name="getFolders" class="my.finish.getFolders" />
+	<service name="getFiles" class="my.finish.getFiles" />
+	<service name ="addFriend" class="my.finish.addFriend"/>
+	<service name ="deleteFriend" class="my.finish.deleteFriend"/>
+	<service name ="isGetName" class="my.finish.isGetName"/>
+	<service name ="getFriend" class="my.finish.getFriend"/>
+	<service name ="creatCrowd" class="my.finish.createCrowd"/>
+	<service name ="getCrowd" class="my.finish.getCrowd"/>
+	<service name ="deleteCrowd" class="my.developing.deleteCrowd"/>
+
+>>>>>>> 4ab519c087cd33995f7b87f06c4e6a90a7c67caf
+
+</config>

@@ -1,0 +1,84 @@
+.wrapper {
+  position: relative;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 24%;
+  height: 40%;
+  padding: 20px;
+  padding-top: 60px;
+  border-radius: 20px;
+  background: #f8f8f8;
+  min-height: 220px;
+  min-width: 280px;
+  margin-top: 8%;
+  .el-form-item {
+    height: 20%;
+    width: 100%;
+    padding: 0 20px;
+    .el-form-item__content {
+      width: 100%;
+      box-sizing: border-box;
+      .el-button {
+        width: 70%;
+        float: left;
+        background: #5a98de;
+      }
+    }
+    .el-input {
+      width: 60%;
+    }
+  }
+  .commitLogin {
+    // padding-top: 16px;
+    .el-form-item__content {
+      margin-left: 30px !important;
+    }
+  }
+  .el-button+.el-button {
+    margin-left: 10px;
+  }
+  .login-footer {
+    width: 72%;
+    margin: 0 auto;
+    padding: 10px;
+    min-width: 280px;
+    padding-left: 16px;
+    list-style: none;
+    a,
+    span {
+      float: left;
+      text-decoration: none;
+      padding: 0 6px;
+      color: #5a98de;
+      ;
+    }
+  }
+  .error {
+    opacity: 0;
+    width: 100%;
+    text-align: center;
+    color: red;
+    font-size: 14px;
+    margin-top: -17px;
+    margin-bottom: 10px;
+    height: 30px;
+  }
+
+  .active {
+    opacity: 1;
+  }
+}
+
+.el-form-item.is-success .el-input__inner,
+.el-form-item.is-success .el-input__inner:focus,
+.el-form-item.is-success .el-textarea__inner,
+.el-form-item.is-success .el-textarea__inner:focus {
+  border-color: #5a98de;
+}
+
+.el-form-item.is-success .el-input__validateIcon {
+  color: #5a98de;
+}

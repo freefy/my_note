@@ -1,0 +1,302 @@
+.note-partner {
+  width: 100%;
+  height: 100%;
+
+  .my-partner {
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
+    float: left;
+    font-size: 1rem;
+    color: #000;
+    font-weight: 300;
+
+    .partner-title {
+      position: fixed;
+      width: 21.5%;
+      padding: 1% 0;
+      // background: #e3e4e5;
+      // background: #dfdddb;
+      z-index: 1;
+      box-sizing: border-box;
+      font-size: 1.2rem;
+      background: #353f47;
+      color: #fff;
+      // position:fixed;定位的时候 只要不写top、left、top、right值，
+      // 他就会默认居于父级进行定位，又不会失去fixed的不动特性，只是位置只能在左上角，
+      // 要定位在其他地方就在加上margin值处理即可
+      // top: 0;
+      // left: 0;
+      .el-icon-plus {
+        font-size: 24px;
+        font-weight: 600;
+        float: right;
+        padding: 0 22px;
+        cursor: pointer;
+        z-index: 99999;
+      }
+    }
+
+    .partner-list {
+      width: 100%;
+      // 宽度为92%为什么会出现滚动条呢，加上margin不是刚好100%吗
+      height: 92%;
+      position: relative;
+      padding-top: 17%;
+      overflow-y: auto;
+      background: #454b50;
+      color: #fff;
+
+      input {
+        border: none;
+        border-bottom: 1px solid black;
+        font-size: 16px;
+        width: 31%;
+        border-radius: 0;
+      }
+
+      .el-select {
+        padding-top: 16px;
+
+        input {
+          width: 92%;
+        }
+      }
+
+      input:focus {
+        outline: none;
+      }
+
+      .partner {
+        width: 100%;
+        height: 8%;
+        line-height: 200%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // background: #fff;
+        box-sizing: border-box;
+        position: relative;
+        cursor: pointer;
+        // background: #404a54;
+
+        .portraitlist {
+          width: 24px;
+          height: 24px;
+          padding: 0 4px;
+          position: absolute;
+          left: 14%;
+        }
+
+        .message {
+          width: 34px;
+          height: 28px;
+          padding: 0 4px;
+          position: absolute;
+          right: 13%;
+        }
+
+        span {
+          letter-spacing: 1px;
+          margin: 0 1%;
+        }
+
+        .el-icon-arrow-right {
+          position: absolute;
+          right: 20px;
+        }
+      }
+
+      .active {
+        background: #a4a4a4;
+      }
+
+      .partner:hover {
+        // background: #4a5d83;
+      }
+    }
+
+  }
+
+  .send-message {
+    width: 40%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden; // 清除兄弟节点的浮动
+
+    .send-message-title {
+      position: fixed;
+      width: 37%;
+      height: 58px;
+      padding: 1% 0;
+      background: #f3f8fc;
+      z-index: 1;
+      box-sizing: border-box;
+      text-align: left;
+      font-size: 18px;
+      color: #000;
+      border-bottom: 1px solid #dededf;
+      padding-left: 2%;
+
+      .delete {
+        position: absolute;
+        color: red;
+        right: 4%;
+        font-size: 22px;
+        cursor: pointer;
+      }
+    }
+
+    .show-message {
+      width: 100%;
+      height: 84%;
+      position: relative;
+      padding: 0 1%;
+      padding-top: 10%;
+      overflow-y: auto;
+      box-sizing: border-box;
+      background: #f3f8fc;
+
+      .user-style,
+      .partner-style {
+        width: 100%;
+        padding: 3% 0;
+        color: #000;
+        box-sizing: border-box;
+
+        img {
+          width: 20px;
+          height: 20px;
+          padding: 0 4px;
+        }
+
+        .userName,
+        .partnerName {
+          font-size: 14px;
+        }
+
+        div {
+          padding: 1% 0;
+          box-sizing: border-box;
+        }
+
+        .time {
+          text-align: center;
+          font-size: 0.8rem;
+
+          span {
+            background: #dadada;
+            color: #fff;
+            padding: 1px 3px;
+          }
+        }
+
+        .say {
+          padding: 0 6%;
+          box-sizing: border-box;
+
+          span {
+            padding: 6px 14px;
+            border-radius: 8px;
+
+          }
+        }
+
+        .share {
+          height: 54px;
+          width: 40%;
+          border: 1px solid gray;
+          text-align: center;
+          background: #fff;
+          border-radius: 6px;
+
+          .icon-wenjian1 {
+            font-size: 2rem;
+          }
+        }
+
+      }
+
+      .user-style {
+        div {
+          text-align: left;
+        }
+
+        .share {
+          margin-left: 5%;
+        }
+
+        .say {
+          span {
+            // background: #12b7f5;
+            background: #55d48a;
+            color: #fff;
+          }
+        }
+      }
+
+      .partner-style {
+        div {
+          text-align: right;
+        }
+
+        .share {
+          margin-left: 55%;
+        }
+
+        .say {
+          span {
+            background: #fff;
+          }
+        }
+      }
+    }
+
+    .edit-message {
+      width: 99%;
+      height: 15%;
+      margin-top: 1%;
+
+      .edit-content {
+        height: 92%;
+        position: relative;
+
+        .text-area {
+          width: 99%;
+          margin-left: 1%;
+          height: 100%;
+          padding: 8px 4px;
+          box-sizing: border-box;
+        }
+
+        .text-area:focus {
+          outline: none;
+        }
+
+        .send-buton {
+          position: absolute;
+          bottom: 12px;
+          right: 14px;
+          width: 70px;
+
+        }
+      }
+    }
+  }
+
+  .show-file {
+    width: 32%;
+    height: 100%;
+    float: left;
+
+    .show-file-title {
+      font-size: 16px;
+      height: 40px;
+      line-height: 40px;
+      background: #a4a4a4;
+      color: #fff;
+    }
+
+    .show-flie-record {}
+  }
+}
